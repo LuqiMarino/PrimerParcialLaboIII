@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Parcial Lucas Marino</title>
+</head>
+<body>
+    <h3>Listado de Materias</h3>
+
+    <div class="ModificarMateria" id="VntModificarMateria" hidden="true"> 
+        <div>
+            <button class="btnCancelarModificar" id="btnCancelarModificar">x</button> </br>
+        </div>       
+        <input type="text" id="idMateria" hidden=true>
+        <label>Nombre:</label></br>
+        <input type="text" id="txtNombre" size="40"> </br>
+
+        <label>Cuatrimestre:</label>
+        <select name="slcCuatri" id="slcCuatri" disabled>
+            <option value="1">1</option> 
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select></br>
+
+        <label>Turno:</label></br>
+        <input type="radio" name="rdoTurno" id="rdoM"> <label>Mañana</label>        
+        <input type="radio" name="rdoTurno" id="rdoN"/> <label>Noche</label></br>
+
+        <label>Fecha Final:</label></br>
+        <input type="date" id="dateFecha" class="date" value="2001-01-01"></br></br>
+
+        <button class="btnModificar" id="btnModificar">Modificar</button>        
+        <button class="btnEliminarModificar" id="btnEliminarModificar">Eliminar</button>
+    </div>
+
+    <table class="Tabla" id="TablaMaterias">
+        <thead>
+            <tr>
+                <th hidden="true">ID</th>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>FechaFinal</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+    </table>
+
+     <div class="spinnerGIF" id="spinner" hidden="true">
+        <img src="./img/spinner.gif" width="200" height="150"/>
+    </div>  
+
+</body>
+</html>
